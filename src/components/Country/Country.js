@@ -5,13 +5,13 @@ const Country = (props) => {
 const {area, region,name,population,flags} = props.country;
     return (
         
-        <div className='country'>
-            <h3> Country:<span className='title'>{name.common}</span></h3>
+        <div className='country '>
+            <h3 className=''> Country:<span className='title'>{name.common}</span></h3>
             <img src={flags.png} alt=''></img>
             
             <p> Population:{population}</p>
             <p> Region:{region}</p>
-            <p> Area:{area} sq. Km.</p>
+            <p className='bg-info'> Area:{area} sq. Km.</p>
         </div>
         // <div className='country'>
             
